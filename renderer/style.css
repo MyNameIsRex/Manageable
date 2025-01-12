@@ -1,0 +1,426 @@
+/*
+    HTML STUFF
+*/
+
+body
+{
+    margin: 15px;
+    padding: 0;
+    border: 0;
+    background-image: url("background.png");
+    background-size: 100vw auto;
+    background-position: 0 85%;
+    background-attachment: fixed;
+    backdrop-filter: blur(5%);
+}
+
+h1
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #D9DCD6;
+    font-size: 200%;
+    font-weight: 700;
+    font-family: "Nunito", serif;
+    opacity: 100%;
+}
+
+h2
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Nunito", serif;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+h3
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Nunito", serif;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+p
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Nunito", serif;
+    font-size: 75%;
+    font-weight: 300;
+}
+
+.master
+{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 15px;
+}
+
+/*
+    MENU BARS
+*/
+
+.container
+{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin: 0;
+    border: 0;
+    border-radius: 10px;
+    opacity: 100%;
+}
+
+.solid
+{
+    background-color: #16425B;
+}
+
+.translucent
+{
+    background-color: rgba(245, 245, 245, 0.2);
+}
+
+/*
+    CONTENT WINDOW
+*/
+
+.window
+{
+    height: fit-content;
+    background-color: none;
+    backdrop-filter: blur(30px);
+    border: none;
+    border-radius: 10px;
+    display: grid;
+    grid-row-gap: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+    BUTTONS
+*/
+
+.secondary_btn
+{
+    outline: none;
+    margin-top: 15px;
+    fill: none;
+    border: none;
+    background-color: transparent;
+    color: #3A7CA5;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: "Nunito", serif;
+    cursor: pointer;
+}
+
+.secondary_btn:hover
+{
+    color: #2F6690;
+}
+
+.secondary_btn:disabled
+{
+    cursor: default;
+    color: #2F6690;
+}
+
+.primary_btn
+{
+    outline: none;
+    margin-top: 15px;
+    fill: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #81C3D7;
+    color: black;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: "Nunito", serif;
+    cursor: pointer;
+}
+
+.primary_btn:hover
+{
+    background-color: #659BAB;
+}
+
+.primary_btn:disabled
+{
+    background-color: #659BAB;
+    cursor: default;
+}
+
+.section_btn
+{
+    outline: none;
+    background-color: transparent;
+    color: #D9DCD6;
+    border: none;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: "Nunito", serif;
+    cursor: pointer;
+}
+
+.section_btn:hover
+{
+    color: #C4C7C1;
+}
+
+.section_btn:disabled
+{
+    cursor: default;
+    color: #C4C7C1;
+}
+
+.task_btn
+{
+    padding: 0;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #808080;
+}
+
+.task_btn:hover
+{
+    color: #606060;
+}
+
+.task_btn:disabled
+{
+    color: #606060;
+    cursor: default;
+}
+
+/*
+    CONTENT HOUSING
+*/
+
+.gridder
+{
+    display: grid;
+    grid-row-gap: 10px;
+    justify-content: space-evenly;
+}
+
+.notes
+{
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.tasks
+{
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+}
+
+/*
+    STICKY NOTES
+*/
+
+.note
+{
+    border: 0;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.yellow
+{
+    background-color: #E3C65D;
+}
+
+.pink
+{
+    background-color: #F2BBD6;
+}
+
+.green
+{
+    background-color: #A4DBA2;
+}
+
+.note_btn
+{
+    padding: 0;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #808080;
+}
+
+.note_btn:hover
+{
+    color: #606060;
+}
+
+.note_btn:disabled
+{
+    color: #606060;
+    cursor: default;
+}
+
+.note_action_bar
+{
+    display: flex;
+    column-gap: 10px;
+}
+
+/*
+    TASKS
+*/
+
+.task
+{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    height: min-content;
+}
+
+.title_bar
+{
+    display: flex;
+    column-gap: 10px;
+}
+
+.progress
+{
+    border: none;
+    border-radius: 10px;
+    background-color: #808080;
+}
+
+.none
+{
+    background-color: #808080;
+    padding: 3px;
+}
+
+.poor
+{
+    background-color: #B81111;
+    padding: 3px;
+}
+
+.fair
+{
+    background-color: #EA5858;
+    padding: 3px;
+}
+
+.moderate
+{
+    background-color: #E6B800;
+    padding: 3px;
+}
+
+.substantial
+{
+    background-color: #6BC959;
+    padding: 3px;
+}
+
+.complete
+{
+    background-color: #04821B;
+    padding: 3px;
+}
+
+.percentage
+{
+    margin-top: 10px;
+    justify-self: right;
+    font-size: 60%;
+}
+/*
+    INPUT FIELDS
+*/
+
+.input
+{
+    width: 100%;
+    display: block;
+    max-block-size: 100%;
+    resize: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.sticky_note
+{
+    font-family: "Nunito", serif;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.task_title
+{
+    font-family: "Nunito", serif;
+    font-size: 100%;
+    font-weight: 600;
+}
+
+.task_desc
+{
+    font-family: "Nunito", serif;
+    font-size: 75%;
+    font-weight: 300;
+}
+
+/*
+    Goals
+*/
+
+.goals
+{
+    padding-top: 10px;
+}
+
+.add_goal
+{
+    aspect-ratio: 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.goal
+{
+    display: flex;
+    column-gap: 5px;
+}
+
+.goal_name
+{
+    font-family: "Nunito", serif;
+    font-size: 75%;
+    font-weight: 300;
+}

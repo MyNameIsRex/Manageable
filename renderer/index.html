@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manageable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="master">
+        <div id="menu_bar" class="container solid">
+            <h1>Manageable</h1>
+            <button id="menu_btn_load_workspace" class="secondary_btn load" type="button"><i class='bx bxs-file-find'></i> Load Workspace</button>
+            <button id="menu_btn_create_workspace" class="secondary_btn workspace" type="button"><i class='bx bx-plus'></i> Create Workspace</button>
+            <button id="menu_btn_add_note" class="secondary_btn notes" type="button"><i class='bx bx-plus'></i> Add Note</button>
+            <button id="menu_btn_add_task" class="primary_btn tasks" type="button"><i class='bx bx-plus'></i> Add Task</button>
+        </div>
+    
+        <div id="sticky_notes_window" class="window pane">
+            <div id="sticky_notes_container" class="container translucent">
+                <h1>Sticky Notes</h1>
+                <button id="sect_btn_add_note" class="section_btn add" type="button"><i class='bx bx-plus bx-md'></i></button>
+            </div>
+            <div id="sticky_notes_gridder" class="gridder notes">
+            </div>
+        </div>
+    
+        <div id="tasks">
+            <div id="tasks_window" class="window pane">
+                <div class="container translucent">
+                    <h1>Tasks</h1>
+                    <button id="sect_btn_add_task" class="section_btn add" type="button"><i class='bx bx-plus bx-md'></i></button>
+                </div>
+                <div id="tasks_gridder" class="gridder tasks">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>
