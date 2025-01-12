@@ -155,17 +155,19 @@ function addTask(taskObj, isNew)
     if (!isNew)
     {
         goalList = new Map(Object.entries(taskObj.goalList));
+        
+        title.value = taskObj.title;
+        taskID = title.value;
+        desc.value = taskObj.desc;
+        percentage.textContent = taskObj.percentage + "%";
+        progressContent.style.width = taskObj.percentage + "%";
+
         goalList.forEach((value, key) =>
         {
             if (value) completedGoals++;
             addNewGoal(value, key, taskID, task, title, desc, percent, percentage, progressContent, goals, goalList, finished, false);
         });
-        title.value = taskObj.title;
-        taskID = taskObj.title;
-        desc.value = taskObj.desc;
-        percentage.textContent = taskObj.percentage + "%";
-        progressContent.style.width = taskObj.percentage + "%";
-
+        
         if (taskObj.percentage == 100) progressContent.className = "progress complete";
         else if (taskObj.percentage >= 75) progressContent.className = "progress substantial";
         else if (taskObj.percentage >= 50) progressContent.className = "progress moderate";

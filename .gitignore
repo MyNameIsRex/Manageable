@@ -9642,3 +9642,4 @@ node_modules/.bin/electron-forge-vscode-nix
 node_modules/.bin/electron-forge
 node_modules/.bin/electron
 node_modules/.bin/asar
+out/make/zip/darwin/arm64/Manageable-darwin-arm64-1.1-beta.zip

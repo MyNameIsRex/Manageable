@@ -1,7 +1,7 @@
 {
   "name": "manageable",
   "productName": "Manageable",
-  "version": "1.0-beta",
+  "version": "1.1-beta",
   "description": "A task manager with associated markdown environment for note-taking per task.",
   "main": "main.js",
   "scripts": {
